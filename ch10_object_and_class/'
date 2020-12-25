@@ -1,0 +1,45 @@
+/* ====================================================
+#   Copyright (C)2020 All rights reserved.
+#
+#   Author        : Pandora
+#   Email         : pandora@github.com
+#   File Name     : test_book.cpp
+#   Last Modified : 2020-10-21 18:36
+#   Describe      : 
+#
+# ====================================================*/
+
+#include <iostream>
+#include "book.h"
+
+using namespace std;
+using home_book::Book;
+
+/*
+ * Book b3 = Book();
+ * b3.show();
+ */
+
+int main(void)
+{
+	Book b1;
+	b1.show();
+	cout << endl;
+
+	Book b2("123456", "c++", "plihe", 123.36, "hello c++");
+	// Book b2 = Book("9787801146274", "English of Magic", "XuanYuanYou", 123.36, "Language");
+	b2.show();
+	cout << endl;
+
+	/*
+	 * b1 = b2;
+	 * b1.show();
+	 */
+	
+	b2 = Book(21.36);
+	b2.show();
+
+	cout << int(24.02) << endl;
+
+	return 0;
+}
